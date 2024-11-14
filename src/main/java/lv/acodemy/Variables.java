@@ -54,6 +54,23 @@ public class Variables {
 
         //Arithmetic operators
 
+        String name = "Nastya";
+        String lastName = "Mikunova";
+        System.out.println(name);
+        System.out.println(lastName);
+        String fullName = name + " " + lastName;
+        System.out.println(fullName);
+
+
+        //string - %s
+        //numbers - %d
+        System.out.println(String.format("My name is: %s, My surname is: %s" , name, lastName));
+
+        var myCurrentAge = 31;
+        var text = "Hello World";
+
+        String myVar;
+        myVar = "Hello World";
 
     }
 }
