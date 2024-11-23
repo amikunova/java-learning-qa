@@ -39,4 +39,8 @@ public class Dispenser {
     public String toString() {
         return "%s[%s:%s] %d/%d".formatted(name, model, color, amount, size);
     }
+
+    public void take(int count) {
+        amount = amount - count;
+    }
 }
