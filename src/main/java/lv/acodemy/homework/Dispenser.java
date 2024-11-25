@@ -40,7 +40,12 @@ public class Dispenser {
         return "%s[%s:%s] %d/%d".formatted(name, model, color, amount, size);
     }
 
-    public void take(int count) {
+    public boolean take(int count) {
+        if (amount < count || count <= 0){
+            return false;
+        }
         amount = amount - count;
+
+        return true;
     }
 }
